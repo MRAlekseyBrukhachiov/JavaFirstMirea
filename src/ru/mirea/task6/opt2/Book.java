@@ -1,9 +1,10 @@
-package ru.mirea.task3.opt3;
+package ru.mirea.task6.opt2;
 
-public class Book {
-    private int year;
+public class Book implements Priceable{
+    private int price;
     private String name;
     private String author;
+
     public Book(String name, String author) {
         this.name = name;
         this.author = author;
@@ -20,19 +21,17 @@ public class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
-    public int getYear() {
-        return year;
-    }
-    public void setYear(int year) {
-        this.year = year;
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 
     @Override
+    public int getPrice() {
+        return price;
+    }
+    @Override
     public String toString() {
-        return "Book{" +
-                "year=" + year +
-                ", name=\"" + name + '\"' +
-                ", author=\"" + author + '\"' +
-                '}';
+        return this.author+" \""+this.name+"\"";
     }
 }

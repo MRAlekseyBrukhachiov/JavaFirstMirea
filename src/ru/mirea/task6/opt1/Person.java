@@ -1,4 +1,4 @@
-package ru.mirea.task6;
+package ru.mirea.task6.opt1;
 
 public class Person implements Nameable {
     private String name;

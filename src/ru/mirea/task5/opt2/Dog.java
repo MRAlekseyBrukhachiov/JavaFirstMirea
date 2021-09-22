@@ -1,8 +1,8 @@
-package ru.mirea.task6;
+package ru.mirea.task5.opt2;
 
-public class Dog implements Nameable{
-    private String name;
-    private int age;
+public abstract class Dog {
+    protected String name;
+    protected int age;
     public String toString() {
         return this.name+", age "+this.age;
     }
@@ -18,18 +18,10 @@ public class Dog implements Nameable{
         this.name = name;
         this.age = age;
     }
-    public void setAge(int age) {
-        this.age = age;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public int getAge() {
-        return age;
-    }
-    public String getName() {
-        return name;
-    }
+    public abstract void setAge(int age);
+    public abstract void setName(String name);
+    public abstract int getAge();
+    public abstract String getName();
     public void intoHumanAge() {
         System.out.println(name+"'s age in human years is "+age*7+" years");
     }
