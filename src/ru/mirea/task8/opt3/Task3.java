@@ -7,6 +7,7 @@ public class Task3 extends JFrame{
         super("Task8_opt_3");
         setSize(300, 300);
         setLocationRelativeTo(null);
+        setLayout(new FlowLayout());
         JLabel jl = new JLabel();
         ImageIcon img = new ImageIcon("D:\\777.gif");
         jl.setIcon(img);
