@@ -8,6 +8,8 @@ public class Task1 extends JFrame {
         super("Task8_opt_1");
         setLayout(null);
         setSize(900,900);
+        setLocationRelativeTo(null);
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
