@@ -9,8 +9,7 @@ public class Main extends JFrame{
     public JLabel lastScore = new JLabel("Last Scorer: N/A");
     public JLabel score = new JLabel("Result: 0X0");
     public Label result = new Label("Winner: Draw");
-    void check()
-    {
+    void check() {
         if (scoreMilan > scoreMadrid)
             result.setText("Winner: Milan");
         else if (scoreMadrid > scoreMilan)
