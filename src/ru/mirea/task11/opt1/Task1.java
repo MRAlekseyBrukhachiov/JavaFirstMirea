@@ -50,8 +50,7 @@ public class Task1 extends JFrame{
                     } else {
                         message.setText("YOU WIN!");
                     }
-                }
-                catch (NumberFormatException ex) {
+                } catch (NumberFormatException ex) {
                     message.setText("Ошибка! Введите число");
                 }
             }
