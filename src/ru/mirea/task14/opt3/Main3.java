@@ -31,11 +31,11 @@ public class Main3 {
             Integer el1 = arr1.peekFirst();
             Integer el2 = arr2.peekFirst();
             if (el1 > el2 && (el1 != 9) && (el2 != 0)) {
-                arr1.offer(arr1.pollLast());
-                arr1.offer(arr2.pollLast());
+                arr1.offer(arr1.pollFirst());
+                arr1.offer(arr2.pollFirst());
             } else if (el1 < el2 || ((el1 == 9) && (el2 == 0))) {
-                arr2.offer(arr1.pollLast());
-                arr2.offer(arr2.pollLast());
+                arr2.offer(arr1.pollFirst());
+                arr2.offer(arr2.pollFirst());
             }
 
             if (arr1.isEmpty()) {
