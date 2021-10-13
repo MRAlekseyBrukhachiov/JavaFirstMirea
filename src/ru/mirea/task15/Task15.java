@@ -16,7 +16,6 @@ public class Task15 {
             FileReader reader = new FileReader("Text.txt");
             int c;
             while((c = reader.read()) != - 1) {
-
                 System.out.print((char) c);
             }
             writer.close();
