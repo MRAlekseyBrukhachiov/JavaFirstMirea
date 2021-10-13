@@ -23,7 +23,6 @@ public class Task2 {
         System.out.println(mass);
         System.out.println("Число 10 "+((mass.contains(10)?"найдено":"не найдено")));
         System.out.println("Число 5 "+((mass.contains(5)?"найдено":"не найдено")));
-        System.out.println(mass);
         mass.addFirst(0);
         mass.addLast(10);
         System.out.println(mass);

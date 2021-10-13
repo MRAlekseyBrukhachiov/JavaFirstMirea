@@ -3,7 +3,6 @@ package ru.mirea.task14.opt5;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayDeque;
-import java.util.Stack;
 
 public class Main5 extends JFrame {
     public JPanel[] pnl = new JPanel[9];
