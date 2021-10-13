@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Task15 {
     public static void main(String[] args) {
-        try
-        {
+        try {
             Scanner in = new Scanner(System.in);
             String text = in.nextLine();
             ///1
@@ -15,7 +14,7 @@ public class Task15 {
             ///2
             FileReader reader = new FileReader("Text.txt");
             int c;
-            while((c = reader.read()) != - 1) {
+            while ((c = reader.read()) != - 1) {
                 System.out.print((char) c);
             }
             writer.close();
@@ -32,7 +31,7 @@ public class Task15 {
             writer2.write(text);
             writer2.close();
         }
-        catch(IOException ex){
+        catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
