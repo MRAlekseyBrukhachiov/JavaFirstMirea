@@ -21,7 +21,7 @@ public class Task24 {
             System.out.print("Пароль: ");
             password = in.next();
             if (!loginPattern.matcher(login).matches()) {
-                System.out.println("Логин может содержать только символы латинского алфавита");
+                System.out.println("Логин может содержать только буквенно-цифровые символы или знак подчёркивания");
             } else if (!passwordPattern.matcher(password).matches()) {
                 System.out.println("Длина пароль должна быть не менее 6 символов. Символами могут быть только буквы латинского алфавита и цифры");
             } else {
