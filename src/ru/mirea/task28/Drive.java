@@ -29,17 +29,20 @@ public class Drive {
 
     public static void main(String[] args) {
         Drive drive = new Drive();
-        Car car = new Car("Audi R8", "H665AB");
+        Car car = new Car("AUDI R8", "H665AB");
         System.out.println("Ваша машина "+car.getModel()+" с номером "+car.getNum());
 
         car.engine.start();
+        car.beep();
         drive.diagnostics(car);
         car.engine.setRpm(400);
         car.wheel[1].setPressure(0.5);
+        car.wheel[2].setPressure(2.0);
         car.wheel[3].setPressure(1.0);
         drive.diagnostics(car);
         drive.service(car);
         drive.diagnostics(car);
+        car.beep();
         car.engine.stop();
     }
 }
