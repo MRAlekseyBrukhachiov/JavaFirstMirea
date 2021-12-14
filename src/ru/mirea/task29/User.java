@@ -10,7 +10,7 @@ public class User implements Serializable {
     private String surname;
     private Calendar date;
     private int id;
-    private static  int cnt = 0;
+    private static int cnt = 0;
 
     public User(String name, String surname, Calendar date) {
         this.name = name;
