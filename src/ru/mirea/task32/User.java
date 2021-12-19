@@ -15,11 +15,10 @@ public class User implements Serializable {
     private Sex sex;
     private Calendar date;
     private Game game;
-    private static int cnt = 0;
 
     public User() {
         date = new GregorianCalendar();
-        id = ++cnt;
+        id = 100000 + (int) (Math.random() * 999999);
     }
 
     public User(String login, String password) {
