@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FFEBCD;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.mirea.task32.HomeController">
+    <children>
+        <AnchorPane prefHeight="116.0" prefWidth="700.0" style="-fx-background-color: #8B008B;">
+            <children>
+                <Label layoutX="200.0" layoutY="20.0" prefHeight="74.0" prefWidth="300.0" text="GameSocial" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="60.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <Label fx:id="userName" layoutX="64.0" layoutY="130.0" prefHeight="48.0" prefWidth="346.0" text="Имя пользователя">
+         <font>
+            <Font name="Impact" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="userAge" layoutX="64.0" layoutY="218.0" prefHeight="28.0" prefWidth="140.0" text="Возраст">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="140.0" prefHeight="28.0" prefWidth="103.0" text="Любимая игра">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="userDateRegistration" layoutX="64.0" layoutY="350.0" prefHeight="18.0" prefWidth="173.0" text="Дата регистрации">
+         <font>
+            <Font name="Impact" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="userFavoriteGame" fitHeight="213.0" fitWidth="151.0" layoutX="435.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/GOW.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userSex" layoutX="64.0" layoutY="255.0" prefHeight="28.0" prefWidth="294.0" text="Пол">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
